@@ -215,11 +215,13 @@ int main()
             cout << "type a number you want to add: ";
             elem = input();
             l.push_back(elem);
+            cout << "your list: ";
             l.print();
             break;
 
         case 2:
             l.remove_last();
+            cout << "your list: ";
             l.print();
             break;
 
@@ -228,11 +230,13 @@ int main()
 
             elem = input();
             l.push_front(elem);
+            cout << "your list: ";
             l.print();
             break;
 
         case 4:
             l.remove_first();
+            cout << "your list: ";
             l.print();
             break;
         case 5:
@@ -241,12 +245,14 @@ int main()
             cout << "type the position of the number you want to add: ";
             pos = input();
             l.addNumberByPosition(elem, pos);
+            cout << "your list: ";
             l.print();
             break;
         case 6:
             cout << "type the position of the number you want to remove: ";
             elem = input();
             l.removeValbyPosition(elem);
+            cout << "your list: ";
             l.print();
             break;
         case 7:
